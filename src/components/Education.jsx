@@ -25,26 +25,13 @@ const Education = () => {
                         <p className="text-sm">(OnGoing)</p>
                         <br />
                         <p >
-                            Belgrano Institute - High School 2060, Rosario:
-                            Catamarca 2451, S2000 JRE, Santa Fe High School
-                            Diploma
+                            Belgrano Institute - High School 2060, Rosario High School Diploma
                         </p>
                         <p className="text-sm">Catamarca 2451, S2000 JRE, Santa Fe</p>
                         
                         
                        
                     </div>
-                    {/* <div>
-                        <p>
-                        Av. Rivadavia 5040, C1424 CES, Buenos Aires
-                        </p>
-                        <br />
-                        <p>
-                        Catamarca 2451, S2000 JRE, Santa Fe
-                        </p>
-                        <br />
-                        <p>(OnGoing)</p>
-                    </div> */}
                 </div>
             </div>
         </div>

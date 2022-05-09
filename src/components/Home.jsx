@@ -1,7 +1,10 @@
 import React from 'react'
 import { HiArrowNarrowRight } from "react-icons/hi";
+import { useParallax } from 'react-scroll-parallax';
 
 const Home = () => {
+   
+
   return (
       <div name="home" className="w-full h-screen bg-[#0a192f]">
           {/* Contenedor */}
