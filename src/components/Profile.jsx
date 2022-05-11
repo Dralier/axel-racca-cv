@@ -5,12 +5,12 @@ const Profile = () => {
   return (
       <div
           name="profile"
-          className="w-full h-screen bg-[#0a192f] text-gray-300"
+          className="w-full h-screen bg-[#0a192f] text-textl"
       >
           <div className="flex flex-col justify-center items-center w-full h-full">
               <div className="max-w-[1000px] w-full grid grid-cols-2 gap-8">
-                  <div className="sm:text-right pb-8 pl-4">
-                      <p className="text-4xl font-bold inline border-b-4 border-pink-600">
+                  <div className=" pb-8 pl-4">
+                      <p className="text-4xl font-bold inline border-b-4 border-rose">
                           Profile
                       </p>
                   </div>
@@ -19,7 +19,7 @@ const Profile = () => {
                   <ul className="flex flex-col">
                       <li className="flex pb-2">
                           <i>
-                              <ChevronRightIcon className="h-5 w-5 text-pink-600" />
+                              <ChevronRightIcon className="h-5 w-5 text-rose" />
                           </i>
                           <p className="flex">
                               Knowledge of HTML, JS, CSS, React, Firebase,
@@ -28,7 +28,7 @@ const Profile = () => {
                       </li>
                       <li className="flex pb-2">
                           <i>
-                              <ChevronRightIcon className="h-5 w-5 text-pink-600" />
+                              <ChevronRightIcon className="h-5 w-5 text-rose" />
                           </i>
                           <p>
                               Entry-level data analytics professional; ongoing
@@ -41,7 +41,7 @@ const Profile = () => {
                       </li>
                       <li className="flex pb-2">
                           <i>
-                              <ChevronRightIcon className="h-5 w-5 text-pink-600" />
+                              <ChevronRightIcon className="h-5 w-5 text-rose" />
                           </i>
                           <p>
                               Good communication,organizational, and analytical
