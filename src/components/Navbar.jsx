@@ -1,44 +1,74 @@
-import React, {useState} from "react";
-import { FaBars, FaTimes, FaGithub, FaLinkedin } from 'react-icons/fa';
-import { HiOutlineMail } from 'react-icons/hi';
-import { BsFillPersonLinesFill } from 'react-icons/bs';
-import { Link } from 'react-scroll';
+import React, { useState } from "react";
+import { FaBars, FaTimes, FaGithub, FaLinkedin } from "react-icons/fa";
+import { HiOutlineMail } from "react-icons/hi";
+import { Link } from "react-scroll";
+import Clock from "./Clock";
 
 const Navbar = () => {
-    const [nav, setNav] = useState(false)
-    const handleClick = () => setNav(!nav)
+    const [nav, setNav] = useState(false);
+    const handleClick = () => setNav(!nav);
 
     return (
         <div className="shadow-md shadow-[#040c16] fixed w-full h-[80px] flex justify-between items-center px-4 bg-[#0a192f] text-textl">
-            <div>
+            <div className="flex flex-col">
                 <h1 className="font-serif verdana text-3xl ">Axel Racca</h1>
+                {/* <Clock /> */}
             </div>
             {/* menu */}
             <ul className="hidden md:flex">
-                <li>
-                    <Link className="hover:text-rose" smooth={true} duration={500}>
+                <li className="hover:scale-110">
+                    <Link
+                        className="hover:text-rose"
+                        to="home"
+                        smooth={true}
+                        duration={500}
+                    >
                         Home
                     </Link>
                 </li>
-                <li>
-                    <Link className="hover:text-rose" to="profile" smooth={true} duration={500}>
+                <li className="hover:scale-110">
+                    <Link
+                        className="hover:text-rose"
+                        to="profile"
+                        smooth={true}
+                        duration={500}
+                    >
                         Profile
                     </Link>
                 </li>
-                <li>
-                    <Link className="hover:text-rose" to="skills" smooth={true} duration={500}>
+                <li className="hover:scale-110">
+                    <Link
+                        className="hover:text-rose"
+                        to="skills"
+                        smooth={true}
+                        duration={500}
+                    >
                         Skills
                     </Link>
                 </li>
-                <li><Link className="hover:text-rose" to="education" smooth={true} duration={500}>
+                <li className="hover:scale-110">
+                    <Link
+                        className="hover:text-rose"
+                        to="education"
+                        smooth={true}
+                        duration={500}
+                    >
                         Education
-                    </Link></li>
-                <li><Link className="hover:text-rose" to="contact" smooth={true} duration={500}>
+                    </Link>
+                </li>
+                <li className="hover:scale-110">
+                    <Link
+                        className="hover:text-rose"
+                        to="contact"
+                        smooth={true}
+                        duration={500}
+                    >
                         Contact
-                    </Link></li>
+                    </Link>
+                </li>
             </ul>
             {/* hamburguesa */}
-            <div onClick={handleClick} className="md:hidden z-10">
+            <div onClick={handleClick} className="md:hidden z-10 hover:scale-110">
                 {!nav ? <FaBars /> : <FaTimes />}
             </div>
             {/* menu movil */}
@@ -49,21 +79,61 @@ const Navbar = () => {
                         : "absolute top-0 left-0 w-full h-screen bg-[#0a192f] flex flex-col justify-center items-center"
                 }
             >
-                <li className="py-6 text-4xl"><Link onClick={handleClick} className="hover:text-rose" to="home" smooth={true} duration={500}>
+                <li className="py-6 text-4xl hover:scale-110">
+                    <Link
+                        onClick={handleClick}
+                        className="hover:text-rose"
+                        to="home"
+                        smooth={true}
+                        duration={500}
+                    >
                         Home
-                    </Link></li>
-                <li className="py-6 text-4xl"><Link onClick={handleClick} className="hover:text-rose" to="profile" smooth={true} duration={500}>
+                    </Link>
+                </li>
+                <li className="py-6 text-4xl hover:scale-110">
+                    <Link
+                        onClick={handleClick}
+                        className="hover:text-rose"
+                        to="profile"
+                        smooth={true}
+                        duration={500}
+                    >
                         Profile
-                    </Link></li>
-                <li className="py-6 text-4xl"><Link onClick={handleClick} className="hover:text-rose" to="skills" smooth={true} duration={500}>
+                    </Link>
+                </li>
+                <li className="py-6 text-4xl hover:scale-110">
+                    <Link
+                        onClick={handleClick}
+                        className="hover:text-rose"
+                        to="skills"
+                        smooth={true}
+                        duration={500}
+                    >
                         Skills
-                    </Link></li>
-                <li className="py-6 text-4xl"><Link onClick={handleClick} className="hover:text-rose" to="education" smooth={true} duration={500}>
+                    </Link>
+                </li>
+                <li className="py-6 text-4xl hover:scale-110">
+                    <Link
+                        onClick={handleClick}
+                        className="hover:text-rose"
+                        to="education"
+                        smooth={true}
+                        duration={500}
+                    >
                         Education
-                    </Link></li>
-                <li className="py-6 text-4xl"><Link onClick={handleClick} className="hover:text-rose" to="contact" smooth={true} duration={500}>
+                    </Link>
+                </li>
+                <li className="py-6 text-4xl hover:scale-110">
+                    <Link
+                        onClick={handleClick}
+                        className="hover:text-rose"
+                        to="contact"
+                        smooth={true}
+                        duration={500}
+                    >
                         Contact
-                    </Link></li>
+                    </Link>
+                </li>
             </ul>
 
             {/* iconos */}
